@@ -44,11 +44,4 @@ class roadTest {
 		assertAll(() -> assertEquals(6, obj.travelRoad(900, 130, 150, 20)),
 				() ->assertEquals(0, obj.travelRoad(0, 130, 150, 20)));
 	}
-	
-	/*
-	@Test
-	void refuleCountRural() {
-		assertEquals(4, obj.travelRoad(900, 150, 200, 50));
-	}
-*/
 }
