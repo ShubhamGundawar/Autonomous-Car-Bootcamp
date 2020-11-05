@@ -20,8 +20,8 @@ public class DemoController {
 	@RequestMapping("/home")
 	public ModelAndView home(HttpServletRequest request,HttpServletResponse response)
 	{
-		String i=request.getParameter("t1");
-		double j=Double.parseDouble(request.getParameter("t2"));
+		String i=request.getParameter("road_type");
+		double j=Double.parseDouble(request.getParameter("road_length"));
 		Car c=new Car();
 		Road r2=c.compute(i,j);
 		double totaltime=r2.getTotaltimetaken();
